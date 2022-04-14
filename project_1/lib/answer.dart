@@ -14,12 +14,15 @@ class Answer extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          primary: Colors.cyan,
-          elevation: 2,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-          ),
-        ),
+            primary: Colors.cyan,
+            elevation: 2,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            side: const BorderSide(
+              color: Colors.blue,
+              width: 2,
+            )),
         onPressed: selectHandler,
         child: Text(
           buttonText,
